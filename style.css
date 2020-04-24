@@ -1,4 +1,47 @@
 :root
 {
-	background-image: url(photos\a1.jpg);
+	background-image: url(photos/a1.jpg);
+	background-size: cover;
+}
+
+body
+{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.container
+{
+	/*position: absolute;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%,-50%);*/
+	box-sizing: border-box;
+	background: linear-gradient(to right,lightpink,red, pink);
+	/*opacity: 0.75;*/
+	padding: 1rem;
+	border: 0.5px solid pink;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 0.5rem;
+	box-shadow: 2px 2px 5px 2px black;
+}
+
+.buttons
+{
+	padding: 0.5rem 0.6rem;
+	transition: all 0.25s ease;
+}
+
+.buttons:hover
+{
+	background-color: pink;
+}
+
+.output
+{
+	grid-column: span 2;
 }
