@@ -28,7 +28,7 @@ body
 	left:50%;
 	top: 50%;
 	transform: translate(-50%,-50%);*/
-	width: 50vw;
+	width: auto;
 	max-width: 350px;
 	box-sizing: border-box;
 	background: linear-gradient(to right,white,lightgray, gray);
@@ -45,15 +45,15 @@ body
 .buttons 
 {
 	padding: 0.5rem 0.6rem;
-	transition: all 0.25s ease;
 	box-shadow: 2px 2px 7px 0.5px black;
 }
 
 .buttons:hover
 {
-	background-color: orange;
-	/*transform: scale(0.90);*/
+	background-color: #544544;
 	transition: all 0.45s ease;
+	border:none;
+	outline: none;
 
 }
 
@@ -87,7 +87,7 @@ body
 	position: absolute;
 	top: 25%;
 	left:45%;
-    transform: translate(-25%,-50%);
+    transform: translate(-50%,-50%);
     color: gray;
     padding:0 0.5rem;
     display: grid;
@@ -136,4 +136,38 @@ body
 .container3 .exp
 {
 	padding: 0.5rem;
+}
+
+/*@media all and (max-width: 400px)
+{
+
+	.container
+	{
+		width: auto;
+	}
+}*/
+
+.greencolor
+{
+	color:green;
+}
+
+footer
+{
+	position: absolute;
+	bottom: 5%;
+	left:50%;
+    transform: translate(-25%,-50%);
+    font-family: "arial";
+    font-style: italic;
+    font-size: 0.65rem;
+    color: gray;
+    list-style: none;
+}
+
+footer > a
+{
+	color:black;
+	opacity: 0.75;
+	text-decoration: none;
 }

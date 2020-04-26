@@ -1,3 +1,2 @@
-# newCalculator
-testing new calculator
-testign
+# Calculator
+Testing basic JS skills

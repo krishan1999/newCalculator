@@ -30,7 +30,7 @@ for (var i = button.length - 1; i >= 0; i--) {
  	};
  }
 
- //calculating the total
+ //calculating the total  IMP
 total.addEventListener("click", function(e)
 {
 	let result;
@@ -38,21 +38,19 @@ total.addEventListener("click", function(e)
     {
     	result =eval(calc.textContent);
     	output.value= result;
+    	output.classList.add("greencolor");
         calc.textContent="";
     }
     catch(e)
     {
-    	console.log("Error:",e);
+    	console.log("Error Description:",e);
         
         output.style.color="red";
         output.value ="INVALID OPERATION";
 
     }
-	
     
 });
-
-
 
  //clearing the input
 clear.onclick= (e) => { 
